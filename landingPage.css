@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body {
+    background-color: black;
+}
+/* --Header-Section-- */
+
+.myheader {
+    width: 100%;
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(./images/netflix_large.png);
+}
+
+.mynav {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mylogo {
+    width: 150px;
+}
+.signin {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 8px 16px;
+}
+.signin:hover {
+    background-color: #C11119;
+}
+.get-started {
+    width: 50%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding:40px;
+    margin-bottom: 100px;
+}
+.get-started h1 {
+    font-size: 60px;
+    font-weight: bolder;
+}
+.get-started h5 {
+    font-weight: bolder;
+    padding: 20px 0;
+}
+#email1 {
+    border: thin solid gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.385);
+    color: white;
+    width: 400px;
+
+}
+
+.get-started-btn {
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.get-started-btn:hover {
+    background-color: #C11119;
+}
+.curve {
+    border-top: 4px solid red;
+    padding: 40px 10px;
+    border-radius: 50% 50% 0 0;
+    background-image: linear-gradient(to bottom, #121B40, black);
+}
+
+/* --Header-Media-Query-- */
+
+@media (max-width: 885px) {
+    .mynav {
+        width: 100%;
+    }
+    .get-started {
+        width: 80%;
+    }
+    .get-started h1 {
+        font-size: 40px;
+    }
+    #email1 {
+        width: 300px;
+    }
+}
+@media (max-width: 440px) {
+    .get-started {
+        width: 100%;
+        padding-left: 20px;
+    }
+    #email1 {
+        width: 400px;
+        padding: 20px 20px;
+        margin-bottom: 20px;
+    }
+    .email-input1 p {
+        font-size: 20px;
+    }
+    .get-started-btn {
+        padding: 20px 40px;
+    }
+}
+
+/* --Carousel-Section */
+
+.caro-sect {
+    background-color: black;
+}
+.caro-sect-title {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.caro-container {
+    width: 100%;
+    margin: auto;
+}
+.movie-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.caro-display {
+    width: 80%;
+    margin: auto;
+}
+.movie {
+    transition: all 0.2s ease-in;
+}
+.movie:hover {
+    transform: scale(1.08);
+}
+.caro-controls {
+    background-color: #333333;
+    padding: 40px 0px;
+    border-radius: 10px;
+}
+
+@media (max-width: 885px) {
+    .movie {
+        width: 130px;
+    }
+    .caro-sect-title {
+        width: 90%;
+    }
+    .caro-display {
+        width: 90%;
+    }
+}
+@media (max-width: 440px) {
+    .movie-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .movie {
+        margin: 10px;
+    }
+}
+
+
+/* --Card-Section-- */
+
+.cardss-sect {
+    background-color: black;
+}
+.cardss-sect-wrapper {
+    padding: 20px 0px;
+    width: 80%;
+    margin: auto;
+}
+.cardss-title {
+    color: white;
+    padding: 20px 0;
+}
+.cardss-wrapper {
+    display: flex;
+    gap: 1em;
+}
+
+.card {
+    background-image: linear-gradient(135deg, #1A2145, #220E17);
+    color: white;
+}
+.card-icon {
+    float: right;
+    width: 60px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media (max-width: 885px) {
+    .cardss-sect-wrapper {
+        width: 90%;
+    }
+    .cardss-wrapper {
+        flex-direction: column;
+    }
+    .cardss {
+        min-width: 100%;
+        max-height: 200px;
+        margin-bottom: 10px;
+    }
+}
+
+/* --Faq-Section-- */
+
+
+.faq-sect {
+    background-color: black;
+}
+.faq-wrap {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+.faq-title {
+    color: white;
+    padding: 20px 0;
+}
+.accord-colors {
+    background-color: #2D2D2D;
+    color: white;
+}
+.accord-title {
+    border-bottom: thin solid black;
+}
+.accord-title:hover {
+    border-bottom: thin solid black;
+    background-color: #414141;
+}
+.email-input2 {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+#email2 {
+    border: thin solid gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 500px;
+    background-color: transparent;
+    color: white;
+}
+
+@media (max-width: 885px) {
+    .faq-wrap {
+        width: 90%;
+    }
+    #email2 {
+        width: 600px;
+        padding: 20px 20px;
+    }
+    .get-started-btn2 {
+        padding: 20px 40px;
+    }
+}
+@media (max-width: 440px) {
+    .email-input2 {
+        text-align: left;
+    }
+    #email2 {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+}
+
+/* --Footer-- */
+
+.myfooter {
+    padding: 50px 0;
+    background-color: black;
+}
+
+.footer-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.footer-columns-wrap {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-columns {
+    display: flex;
+    flex-direction: column;
+}
