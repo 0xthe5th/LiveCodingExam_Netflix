@@ -117,6 +117,14 @@ body {
     }
 }
 
+@media (max-width: 400px) {
+    #email1 {
+        width: 340px;
+        padding: 20px 20px;
+        margin-bottom: 20px;
+    }
+}
+
 /* --Carousel-Section */
 
 .caro-sect {
@@ -279,6 +287,13 @@ body {
     }
     #email2 {
         width: 400px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 400px) {
+    #email2 {
+        width: 360px;
+        padding: 20px 20px;
         margin-bottom: 20px;
     }
 }
