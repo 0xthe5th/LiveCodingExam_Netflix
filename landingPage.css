@@ -41,7 +41,7 @@ body {
     background-color: #C11119;
 }
 .get-started {
-    width: 50%;
+    width: 80%;
     margin: auto;
     color: white;
     text-align: center;
@@ -83,29 +83,45 @@ body {
     background-image: linear-gradient(to bottom, #121B40, black);
 }
 
-/* --Header-Media-Query-- */
-
-@media (max-width: 885px) {
+@media (max-width: 1279px) {
+    .get-started h1 {
+        font-size: 50px;
+    }
+    #email1 {
+        width: 380px;
+    }
+}
+@media (max-width: 959px) {
     .mynav {
         width: 100%;
     }
     .get-started {
-        width: 80%;
+        width: 90%;
     }
+    .get-started h1 {
+        font-size: 45px;
+    }
+    #email1 {
+        width: 220px;
+    }
+}
+@media (max-width: 599px) {
     .get-started h1 {
         font-size: 40px;
     }
     #email1 {
-        width: 300px;
+        width: 320px;
+        margin-bottom: 10px;
     }
+
 }
 @media (max-width: 440px) {
     .get-started {
         width: 100%;
-        padding-left: 20px;
+        
     }
     #email1 {
-        width: 400px;
+        width: 80vw;
         padding: 20px 20px;
         margin-bottom: 20px;
     }
@@ -119,9 +135,7 @@ body {
 
 @media (max-width: 400px) {
     #email1 {
-        width: 340px;
-        padding: 20px 20px;
-        margin-bottom: 20px;
+        /* width: 340px; */
     }
 }
 
@@ -139,16 +153,17 @@ body {
     width: 100%;
     margin: auto;
 }
+.caro-display {
+    width: 80%;
+    margin: auto;
+}
 .movie-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.caro-display {
-    width: 80%;
-    margin: auto;
-}
 .movie {
+    width: 15vw;
     transition: all 0.2s ease-in;
 }
 .movie:hover {
@@ -159,25 +174,29 @@ body {
     padding: 40px 0px;
     border-radius: 10px;
 }
-
-@media (max-width: 885px) {
-    .movie {
-        width: 130px;
-    }
-    .caro-sect-title {
-        width: 90%;
-    }
+.caro-container2 {
+    display: none;
+}
+@media (max-width: 959px) {
     .caro-display {
         width: 90%;
     }
-}
-@media (max-width: 440px) {
-    .movie-wrap {
-        flex-wrap: wrap;
-        justify-content: center;
+    .caro-sect-title {
+    width: 90%;
     }
     .movie {
-        margin: 10px;
+    width: 17vw;
+    }
+}
+@media (max-width: 440px) {
+     .caro-container {
+        display: none;
+     }
+     .caro-container2 {
+        display: block;
+     }
+     .movie {
+        width: 120px;
     }
 }
 
@@ -201,9 +220,10 @@ body {
     gap: 1em;
 }
 
-.card {
+.cardss {
     background-image: linear-gradient(135deg, #1A2145, #220E17);
     color: white;
+    min-width: 19.5vw;
 }
 .card-icon {
     float: right;
@@ -212,18 +232,32 @@ body {
     bottom: 10px;
     right: 10px;
 }
-
-@media (max-width: 885px) {
+@media (max-width: 1279px) {
+    .cardss-wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .cardss {
+        min-width: 40vw;
+    }
+}
+@media (max-width: 959px) {
     .cardss-sect-wrapper {
         width: 90%;
     }
     .cardss-wrapper {
+        display: flex;
         flex-direction: column;
     }
     .cardss {
         min-width: 100%;
         max-height: 200px;
         margin-bottom: 10px;
+    }
+}
+@media (max-width: 440px) {
+    .cardss {
+        min-height: 250px;
     }
 }
 
@@ -268,19 +302,20 @@ body {
     background-color: transparent;
     color: white;
 }
-
-@media (max-width: 885px) {
+@media (max-width: 959px) {
     .faq-wrap {
         width: 90%;
     }
     #email2 {
-        width: 600px;
-        padding: 20px 20px;
-    }
-    .get-started-btn2 {
-        padding: 20px 40px;
+        width: 55vw
     }
 }
+ @media (max-width: 599px) {
+    #email2 {
+        width: 520px;
+        margin-bottom: 10px;
+    }
+ }
 @media (max-width: 440px) {
     .email-input2 {
         text-align: left;
@@ -312,10 +347,41 @@ body {
 
 .footer-columns-wrap {
     padding: 40px 0;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-columns-wrap2 {
+    display: none;
 }
 .footer-columns {
     display: flex;
     flex-direction: column;
+}
+
+
+@media (max-width: 1279px) {
+    .footer-columns-wrap1 {
+        display: none;
+    }
+    .footer-columns-wrap2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 959px) {
+    .footer-wrapper {
+        width: 90%;
+    }
+    .footer-columns-wrap1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-columns-wrap2 {
+        display: none;
+    }
+}
+@media (max-width: 599px) {
+    .footer-columns-wrap1 {
+        grid-template-columns: auto;
+    }
 }
